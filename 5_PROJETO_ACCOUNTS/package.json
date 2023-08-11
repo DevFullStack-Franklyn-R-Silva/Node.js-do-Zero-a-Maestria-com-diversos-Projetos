@@ -1,0 +1,16 @@
+{
+  "name": "5_projeto_accounts",
+  "version": "1.0.0",
+  "description": "- npm init",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Franklyn",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^8.1.2"
+  }
+}
