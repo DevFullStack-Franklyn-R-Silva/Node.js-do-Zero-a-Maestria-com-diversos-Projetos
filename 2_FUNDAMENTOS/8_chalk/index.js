@@ -1,6 +1,3 @@
-// npm init
-// npm install chalk@4.1.2
-
 const chalk = require("chalk");
 
 const nota = 9;

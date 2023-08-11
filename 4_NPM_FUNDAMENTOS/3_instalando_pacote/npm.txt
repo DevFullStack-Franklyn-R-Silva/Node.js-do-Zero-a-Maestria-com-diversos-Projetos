@@ -1,0 +1,4 @@
+o que foi ultilizado:
+
+npm init -y
+npm install lodash
