@@ -30,6 +30,17 @@ function operation() {
             if (action === "Criar conta") {
                 createAccount();
                 buildAccount();
+            }else if (action === "Depositar"){
+
+            }else if (action === "Consultar Saldo"){
+
+            }else if(action === "Sacar"){
+
+            }else if(action === "Sair"){
+                console.log(chalk.bgBlue.black("Obrigado por usar o Accounts!"))
+                process.exit();
+            }else{
+                console.log("Error!");
             }
         })
         .catch((err) => console.log(err));
@@ -75,7 +86,7 @@ function buildAccount() {
                     console.log(err);
                 }
             );
-            console.log(chalk.green("Parabéns sua conta foi criada!"))
+            console.log(chalk.green("Parabéns sua conta foi criada!"));
             operation();
         })
         .catch((err) => console.log(err));
