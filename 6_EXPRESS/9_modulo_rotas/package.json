@@ -1,0 +1,19 @@
+{
+    "name": "3_setup",
+    "version": "1.0.0",
+    "description": "```txt",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon ./index.js localhost 3001"
+    },
+    "keywords": [],
+    "author": "Franklyn",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}
