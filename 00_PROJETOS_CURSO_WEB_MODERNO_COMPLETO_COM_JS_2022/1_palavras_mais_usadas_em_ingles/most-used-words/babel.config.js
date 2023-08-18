@@ -1,5 +1,4 @@
-module.exports = {
-  presets: [
-    '@vue/cli-plugin-babel/preset'
-  ]
-}
+/* eslint-disable */
+module.exports =  {
+    presets: ["@vue/cli-plugin-babel/preset"],
+};
