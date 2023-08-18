@@ -23,3 +23,7 @@ Foi instalado Vue CLI v5.0.8
 
 - nvm install 16.14.0
 - nvm use 16.14.0
+
+### Site das legendas
+
+[Site das legendas](https://moviesubtitlesrt.com/)
