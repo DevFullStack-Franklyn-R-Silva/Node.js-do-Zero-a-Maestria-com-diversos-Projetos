@@ -16,10 +16,12 @@ app.set("view engine", "handlebars");
 
 app.use(express.static("public", { extensions: ["css"] }));
 
+// pagina inicial
 app.get("/", (req, res) => {
     res.render("home");
 });
 
+// inserir
 app.post("/books/insertbook", (req, res) => {
     const title = req.body.title;
     const pageqty = req.body.pageqty;
@@ -35,6 +37,7 @@ app.post("/books/insertbook", (req, res) => {
     });
 });
 
+// buscar todos
 app.get("/books", (req, res) => {
     const sql = "SELECT * FROM books";
 
@@ -50,6 +53,7 @@ app.get("/books", (req, res) => {
     });
 });
 
+// buscar por id
 app.get("/books/:id", (req, res) => {
     const id = req.params.id;
 
@@ -65,6 +69,23 @@ app.get("/books/:id", (req, res) => {
     });
 });
 
+app.get("/books/edit/:id", (req, res) => {
+    const id = req.params.id;
+
+    const sql = `SELECT * FROM books WHERE id = '${id}'`;
+
+    conn.query(sql, function (err, data) {
+        if (err) {
+            console.log(err);
+            return;
+        }
+        const book = data[0];
+
+        res.render("editbook", { book });
+    });
+});
+
+// conexao com o banco
 const conn = mysql.createConnection({
     host: "localhost",
     user: "root",
