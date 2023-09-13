@@ -1,0 +1,20 @@
+{
+  "name": "1_instalacao_mysql",
+  "version": "1.0.0",
+  "description": "- Primeiramente vamos precisar instalar o driver, que é um pacote\r chamado mysql;\r - Vamos instalá-lo com o npm!\r - Depois precisamos conectar ao nosso banco de dados;\r - Vamos inserir informações como: host, user, password e o banco;",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "mysql2": "^3.6.1",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.33.0"
+  }
+}
